@@ -17,11 +17,9 @@ pip install nexus-gateway
 
 # Getting an API Key
 You need a valid API Key to use this client.
-Get your Free API Key here
+[Get your Free API Key here](https://nexusgateway.onrender.com/)
 
- ## Quick Start
-code
-Python
+🚀 Quick Start
 from nexus_gateway import NexusClient
 
 # 1. Initialize the Client
@@ -35,23 +33,21 @@ print(response)
 🤖 Switching Models (The Universal Router)
 Nexus Gateway supports multiple AI providers. You can switch models instantly without changing your code structure.
 Use Claude 3:
-code
-Python
 response = client.chat(
     message="Write a poem about rust.", 
     model="claude-3-opus-20240229"
 )
 Use GPT-4:
-code
-Python
 response = client.chat(
     message="Complex math problem...", 
     model="gpt-4"
 )
+
 ✨ Features
-⚡ Semantic Caching: Automatically caches responses in Vector DB. Identical or similar queries return instantly.
-🔌 Universal API: One interface for OpenAI and Anthropic.
-🛡️ Rate Limiting: Built-in protection against spam.
-💸 Cost Savings: Reduces API bills by serving cached hits.
+    ⚡ Semantic Caching: Automatically caches responses in Vector DB. Identical or similar queries return instantly.
+     🔌 Universal API: One interface for OpenAI and Anthropic.
+     🛡️ Rate Limiting: Built-in protection against spam.
+     💸 Cost Savings: Reduces API bills by serving cached hits.
+
 License
 MIT License © 2025 Sunny Anand
