@@ -2,19 +2,24 @@
 
 The official Python client for **Nexus Gateway** – The High-Performance AI Semantic Caching Layer.
 
-Use this SDK to integrate OpenAI/Anthropic capabilities into your Python apps with **90% lower costs** and **sub-millisecond latency**.
+This library provides a simple interface to interact with the Nexus Gateway API, enabling semantic caching, multi-model routing, and automated cost optimization for LLM applications.
 
----
+## Installation
 
-##  Installation
+You can install the package via pip:
 
 ```bash
 pip install nexus-gateway
-(Note: If installing locally from source, run pip install . in the root directory)
-🔑 Getting an API Key
+
+```
+
+(Note: For local development, you can run pip install . in the root directory)
+
+# Getting an API Key
 You need a valid API Key to use this client.
 Get your Free API Key here
-🚀 Quick Start
+
+# Quick Start
 code
 Python
 from nexus_gateway import NexusClient
@@ -27,7 +32,9 @@ response = client.chat("Explain quantum computing in one sentence.")
 
 print(response)
 # Output: "Quantum computing uses qubits to perform calculations..."
-🤖 Switching Models (The Universal Router)
+
+## 🤖 Switching Models (The Universal Router)
+
 Nexus Gateway supports multiple AI providers. You can switch models instantly without changing your code structure.
 Use Claude 3:
 code
