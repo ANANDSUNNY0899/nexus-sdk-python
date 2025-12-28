@@ -1,53 +1,69 @@
 # 🐍 Nexus Gateway Python SDK
 
-The official Python client for **Nexus Gateway** – The High-Performance AI Semantic Caching Layer.
+The official Python client for **Nexus Gateway**.
 
 This library provides a simple interface to interact with the Nexus Gateway API, enabling semantic caching, multi-model routing, and automated cost optimization for LLM applications.
 
-## Installation
+<br>
+
+## 📦 Installation
 
 You can install the package via pip:
 
 ```bash
 pip install nexus-gateway
-
-```
-
-(Note: For local development, you can run pip install . in the root directory)
-
-# Getting an API Key
-You need a valid API Key to use this client.
-[Get your Free API Key here](https://nexusgateway.onrender.com/)
-
-🚀 Quick Start
+(For local development, you can run pip install . in the root directory)
+<br>
+🔑 Authentication
+To use this SDK, you require a valid API Key.
+Get your Free API Key here
+<br>
+🚀 Usage
+Basic Example
+Initialize the client with your API key and send a message. By default, requests are routed to gpt-3.5-turbo.
+code
+Python
 from nexus_gateway import NexusClient
 
 # 1. Initialize the Client
+# Replace 'nk-...' with your actual key from the dashboard
 client = NexusClient(api_key="nk-your-key-here")
 
-# 2. Chat with AI (Defaults to GPT-3.5)
-response = client.chat("Explain quantum computing in one sentence.")
-
-print(response)
-# Output: "Quantum computing uses qubits to perform calculations..."
-🤖 Switching Models (The Universal Router)
-Nexus Gateway supports multiple AI providers. You can switch models instantly without changing your code structure.
-Use Claude 3:
+# 2. Send request
+try:
+    response = client.chat("Explain quantum computing in one sentence.")
+    print(response)
+except Exception as e:
+    print(f"Error: {e}")
+<br>
+🤖 Advanced Usage
+Switching Models (Universal Router)
+Nexus Gateway acts as a unified interface for multiple AI providers. You can specify the model parameter to switch providers dynamically without changing your client logic.
+Using Anthropic (Claude 3):
+code
+Python
 response = client.chat(
-    message="Write a poem about rust.", 
+    message="Write a Python script to sort a list.", 
     model="claude-3-opus-20240229"
 )
-Use GPT-4:
+Using OpenAI (GPT-4):
+code
+Python
 response = client.chat(
-    message="Complex math problem...", 
+    message="Explain the theory of relativity.", 
     model="gpt-4"
 )
-
-✨ Features
-    ⚡ Semantic Caching: Automatically caches responses in Vector DB. Identical or similar queries return instantly.
-     🔌 Universal API: One interface for OpenAI and Anthropic.
-     🛡️ Rate Limiting: Built-in protection against spam.
-     💸 Cost Savings: Reduces API bills by serving cached hits.
-
+<br>
+✨ Key Features
+Semantic Caching: Responses are cached using vector embeddings. Similar queries return cached results instantly.
+Unified Interface: Switch between OpenAI and Anthropic models without changing your underlying code.
+Rate Limiting: Built-in protection against API abuse.
+Automated Billing: Usage is tracked automatically via the gateway.
+<br>
 License
 MIT License © 2025 Sunny Anand
+code
+Code
+5.  Click **"Commit changes"**.
+
+**This version uses `<br>` tags to force spacing.** It will look clean and structured like a real Google Doc or professional library. 📄✨
