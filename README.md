@@ -19,7 +19,7 @@ pip install nexus-gateway
 You need a valid API Key to use this client.
 Get your Free API Key here
 
-# Quick Start
+ ## Quick Start
 code
 Python
 from nexus_gateway import NexusClient
@@ -32,9 +32,7 @@ response = client.chat("Explain quantum computing in one sentence.")
 
 print(response)
 # Output: "Quantum computing uses qubits to perform calculations..."
-
-## 🤖 Switching Models (The Universal Router)
-
+🤖 Switching Models (The Universal Router)
 Nexus Gateway supports multiple AI providers. You can switch models instantly without changing your code structure.
 Use Claude 3:
 code
