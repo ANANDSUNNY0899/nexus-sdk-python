@@ -7,13 +7,13 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="nexus-gateway",
-    version="0.1.6", #  version
+    version="0.1.8", #  version
     description="The Python SDK for Nexus Gateway",
 
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    
+
     author="Sunny Anand",
     author_email="asunny583@gmail.com",
     packages=find_packages(),

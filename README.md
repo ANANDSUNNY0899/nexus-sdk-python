@@ -4,7 +4,7 @@ The official Python client for **Nexus Gateway**.
 
 This library provides a simple interface to interact with the Nexus Gateway API, enabling semantic caching, multi-model routing, and automated cost optimization for LLM applications.
 
-**New in v0.1.4:** Interactive CLI and Real-time Streaming support.
+**New in v0.1.7:** Interactive CLI and Real-time Streaming support.
 
 
 ## Installation
@@ -62,7 +62,7 @@ client.chat("Hello", model="gpt-4")
     *  Semantic Caching: Automatically caches responses in Vector DB. Identical or similar queries return instantly.
     *  Universal API: One interface for OpenAI and Anthropic.
     *  Rate Limiting: Built-in protection against spam or API abuse.
-    * Automated Billing: Usage is tracked automatically via the gateway.
+    *  Automated Billing: Usage is tracked automatically via the gateway.
     *  Cost Savings: Reduces API bills by serving cached hits.
 License
 MIT License © 2025 Sunny Anand
