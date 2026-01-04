@@ -17,7 +17,7 @@ pip install nexus-gateway
 
 # Getting an API Key
 You need a valid API Key to use this client.
-Get your Free API Key here
+[Get your Free API Key here](https://nexus-gateway.org)
 
 # Quick Start
 code
