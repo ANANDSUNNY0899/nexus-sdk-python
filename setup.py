@@ -1,23 +1,32 @@
 from setuptools import setup, find_packages
 import os
 
-# Read the contents of your README file
 this_directory = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
     name="nexus-gateway",
-    version="0.1.2",  # <--- BUMPED VERSION (Crucial!)
-    description="The Python SDK for Nexus Gateway - AI Semantic Caching Layer",
-    long_description=long_description,  # <--- This puts the README on PyPI
-    long_description_content_type="text/markdown", # <--- This tells PyPI it's Markdown
+    version="0.1.6", #  version
+    description="The Python SDK for Nexus Gateway",
+
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+
+    
     author="Sunny Anand",
-    author_email="your_email@gmail.com",
+    author_email="asunny583@gmail.com",
     packages=find_packages(),
     install_requires=[
         "requests",
     ],
+    # <--- THIS IS THE MAGIC PART --->
+    entry_points={
+        'console_scripts': [
+            'nexus=nexus_gateway.cli:main',
+        ],
+    },
+    # <--- END MAGIC PART --->
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
