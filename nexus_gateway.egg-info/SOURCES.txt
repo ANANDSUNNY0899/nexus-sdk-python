@@ -3,6 +3,8 @@ setup.py
 nexus_gateway/__init__.py
 nexus_gateway/cli.py
 nexus_gateway/client.py
+nexus_gateway/preflight.py
+nexus_gateway/test_nexus.py
 nexus_gateway.egg-info/PKG-INFO
 nexus_gateway.egg-info/SOURCES.txt
 nexus_gateway.egg-info/dependency_links.txt
