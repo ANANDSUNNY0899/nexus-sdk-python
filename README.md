@@ -1,4 +1,4 @@
-# 🚀 Nexus Gateway Python SDK (v3.1.0)
+# 🐍 Nexus Gateway Python SDK (v3.1.0)
 
 **The High-Performance Sovereign Infrastructure for AI Engineering.**
 
@@ -17,12 +17,12 @@ One line of code to reduce LLM latency by 95%, costs by 90%, and enforce determi
 *   **Sovereign Shield:** Edge-level PII redaction and deterministic governance (v3.0). Ensure data privacy before it hits the provider.
 *   **Multi-Provider BYOK:** Bring Your Own Key to bypass Nexus credits and utilize direct provider billing with zero overhead.
 
-## 📦 Installation
+##  Installation
 
 ```bash
 pip install nexus-gateway
 ```
-## 🚀 CLI Tool: Interactive Command Center
+##  CLI Tool: Interactive Command Center
 Nexus Gateway provides a powerful interactive terminal experience.
 
 ```# Launch the Sovereign Shell
@@ -34,7 +34,7 @@ nexus
    * /exit - Terminate secure data plane
 
 
-## 🛠️ Usage (Python Implementation)
+##  Usage (Python Implementation)
 
     1. Initialize the Sovereign Client
 ```
@@ -85,7 +85,7 @@ for word in stream:
     Routing Reliability	Single Vendor	Self-Healing Failover
     Governance	None	AES-256 Sovereign Shield
 ```
-# 🛡️ Authentication & Security
+#  Authentication & Security
 Register for a protocol access key at: https://www.nexus-gateway.org
 
 MIT License © 2025 Sunny Anand · [Documentation](https://nexus-gateway.org/docs) · [GitHub](https://github.com/ANANDSUNNY0899/NexusGateway)
