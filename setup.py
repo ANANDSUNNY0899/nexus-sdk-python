@@ -7,7 +7,7 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="nexus_gateway",
-    version="3.1.3", # 🚀 BUMPED TO 3.1.0 to match Protocol Standard
+    version="3.1.4", # 🚀 BUMPED TO 3.1.0 to match Protocol Standard
     description="High-performance AI infrastructure with semantic caching and sovereign governance.",
     long_description=long_description,
     long_description_content_type="text/markdown",

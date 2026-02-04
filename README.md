@@ -61,10 +61,12 @@ for word in stream:
 
 ```
     # Pass your own provider key to skip Nexus credit usage
+    ```python
     response = client.chat(
     model="gpt-4o",
     message="Summarize the legal implications of AI governance.",
-    provider_key="sk-your-openai-key"
+    provider_key="sk-your-openai-key", # 🚀 BYOK Injection
+    stream=False
     )
 ```
 
@@ -88,7 +90,7 @@ for word in stream:
 #  Authentication & Security
 Register for a protocol access key at: https://www.nexus-gateway.org
 
-MIT License © 2025 Sunny Anand · [Documentation](https://nexus-gateway.org/docs) · [GitHub](https://github.com/ANANDSUNNY0899/NexusGateway)
+MIT License © 2025 Sunny Anand · [Mission Control] . [Documentation](https://nexus-gateway.org/docs) · [GitHub](https://github.com/ANANDSUNNY0899/NexusGateway)
 
 
 
