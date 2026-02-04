@@ -90,7 +90,7 @@ for word in stream:
 #  Authentication & Security
 Register for a protocol access key at: https://www.nexus-gateway.org
 
-MIT License © 2025 Sunny Anand · [Mission Control] . [Documentation](https://nexus-gateway.org/docs) · [GitHub](https://github.com/ANANDSUNNY0899/NexusGateway)
+MIT License © 2025 Sunny Anand · [Mission Control](https://www.nexus-gateway.org/dashboard) . [Documentation](https://nexus-gateway.org/docs) · [GitHub](https://github.com/ANANDSUNNY0899/NexusGateway)
 
 
 
