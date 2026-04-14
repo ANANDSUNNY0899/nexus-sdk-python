@@ -1,6 +1,29 @@
+# --- Python Bytecode ---
 __pycache__/
 *.pyc
-.env
+*.pyo
+*.pyd
+
+# --- Distribution & Build ---
 build/
 dist/
 *.egg-info/
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Secrets & Environment ---
+.env
+.env.*
+
+# --- Logs & Performance ---
+*.log
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
