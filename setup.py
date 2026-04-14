@@ -7,7 +7,7 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="nexus_gateway",
-    version="3.1.4", # 🚀 BUMPED TO 3.1.0 to match Protocol Standard
+    version="3.1.6", 
     description="High-performance AI infrastructure with semantic caching and sovereign governance.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -17,6 +17,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "requests>=2.25.0",
+        "rich>=10.0.0",
     ],
     # ⚡ THE CLI COMMANDS
     entry_points={
